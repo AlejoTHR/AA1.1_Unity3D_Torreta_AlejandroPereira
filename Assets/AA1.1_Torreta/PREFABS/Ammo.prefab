@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7331062603629623939}
   - component: {fileID: 9165999499881780015}
   - component: {fileID: 7763139542793581234}
-  - component: {fileID: 9026360146339423679}
+  - component: {fileID: 3667992707598384186}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -143,7 +143,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9026360146339423679
+--- !u!114 &3667992707598384186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,5 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fee369de91ea340a969e9a21ba7044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurretAmmo
+  _PivotCanon: {fileID: 0}
+  MousePos: {x: 0, y: 0, z: 0}
+  _ShootExit: {fileID: 0}
+  _Ammo: {fileID: 0}
   _rb: {fileID: 0}
-  BulletSpeed: 10
+  BulletSpeed: 0
