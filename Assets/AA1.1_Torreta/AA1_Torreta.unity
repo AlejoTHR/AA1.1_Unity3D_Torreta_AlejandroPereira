@@ -745,6 +745,7 @@ MonoBehaviour:
   MousePos: {x: 0, y: 0, z: 0}
   _ShootExit: {fileID: 2050900699}
   _Ammo: {fileID: 8648689023291854840, guid: ccdd1d0e4e7061b44aa693c1ff9720ff, type: 3}
+  ammoSpeed: 10
 --- !u!4 &1181185919
 Transform:
   m_ObjectHideFlags: 0
