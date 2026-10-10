@@ -811,6 +811,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 75ac62484c075e44bad7cfef523bf35c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 75ac62484c075e44bad7cfef523bf35c, type: 3}
       propertyPath: m_Name
       value: Target
@@ -874,7 +878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bulleye
   _BrokenBulleye: {fileID: 9022232947376029177, guid: e4a9462e313f67a4caae020654598b56, type: 3}
   IsActive: 1
-  Timer: 3
+  SpawnTimer: 3
+  TimerMax: 3
 --- !u!1 &1466666632
 GameObject:
   m_ObjectHideFlags: 0
