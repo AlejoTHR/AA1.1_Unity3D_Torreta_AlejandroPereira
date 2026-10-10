@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 178247800818165096}
   m_Layer: 0
   m_Name: Ammo
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,3 +155,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82debaffd8ada1d40aeb4c329b06c15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorretAmmo
+  _rb: {fileID: 0}
+  _BrokenBulleye: {fileID: 9022232947376029177, guid: e4a9462e313f67a4caae020654598b56, type: 3}
