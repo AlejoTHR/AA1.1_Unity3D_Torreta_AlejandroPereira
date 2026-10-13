@@ -4,7 +4,7 @@ public class Bulleye : MonoBehaviour
 {
     public GameManager Manager;
 
-    private int PointValue = 100;
+    public int PointValue = 100;
 
     public GameObject _BrokenBulleye;
 

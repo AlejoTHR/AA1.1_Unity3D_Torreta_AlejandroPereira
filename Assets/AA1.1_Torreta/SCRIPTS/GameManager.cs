@@ -4,17 +4,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public TextMeshPro Score;
-
-
-
+    public TextMeshProUGUI Score;
 
     public int POINTS;
 
 
     private void Update()
     {
-        
+
+        Score.text = POINTS.ToString();
+
 
 
 

@@ -47,7 +47,7 @@ public class TorretMovement : MonoBehaviour
 
 
         // DIRECCIÓN DEL CAÑÓN        +      // DIRECCIÓN DEL CUERPO
-        Quaternion BulletRotation = Quaternion.Euler(-_PivotCanon.localEulerAngles.x + 90, transform.localEulerAngles.y, 0);
+        Quaternion BulletRotation = Quaternion.Euler(-_PivotCanon.localEulerAngles.x-90, transform.localEulerAngles.y, 0);
 
 
         if (_input.Player.Shoot.WasPressedThisFrame())
