@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Bulleye : MonoBehaviour
 {
+    public GameManager Manager;
+
+    private int PointValue = 100;
 
     public GameObject _BrokenBulleye;
 
@@ -43,6 +46,8 @@ public class Bulleye : MonoBehaviour
             
             _render.enabled = IsActive;
             _clldr.enabled = IsActive;
+
+            Manager.POINTS += PointValue;
 
             Instantiate(_BrokenBulleye, gameObject.transform.position, Quaternion.identity);
         }
