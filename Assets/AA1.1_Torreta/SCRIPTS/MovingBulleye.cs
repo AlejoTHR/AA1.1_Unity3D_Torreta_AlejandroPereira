@@ -8,6 +8,8 @@ public class MovingBulleye : MonoBehaviour
     [SerializeField] Vector3 Next;
     public float Speed = 1;
 
+
+
     private void Start()
     {
         Next = B.position;

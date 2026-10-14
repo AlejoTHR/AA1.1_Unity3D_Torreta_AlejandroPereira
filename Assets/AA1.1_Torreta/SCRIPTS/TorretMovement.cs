@@ -39,12 +39,11 @@ public class TorretMovement : MonoBehaviour
     {
         MousePos = Mouse.current.delta.ReadValue();
         
-        // DIRECCIÓN DEL CAÑÖN
+        // DIRECCIÓN DEL CAÑÖNsa
         _PivotCanon.Rotate(new Vector3(MousePos.y, 0, 0));
 
         // DIRECCIÓN DEL CUERPO
         transform.Rotate(new Vector3(0, MousePos.x, 0));
-
 
         // DIRECCIÓN DEL CAÑÓN        +      // DIRECCIÓN DEL CUERPO
         Quaternion BulletRotation = Quaternion.Euler(-_PivotCanon.localEulerAngles.x+90, transform.localEulerAngles.y, 0);
@@ -53,7 +52,8 @@ public class TorretMovement : MonoBehaviour
         if (_input.Player.Shoot.WasPressedThisFrame())
         {
             GameObject AMMO = Instantiate(_Ammo, _ShootExit.position, BulletRotation);
-            AMMO.GetComponent<Rigidbody>().linearVelocity = _ShootExit.forward * ammoSpeed;
+            AMMO.GetComponent<Rigidbody>().AddForce(_ShootExit.forward * ammoSpeed) ;
+           
         }
 
     }
