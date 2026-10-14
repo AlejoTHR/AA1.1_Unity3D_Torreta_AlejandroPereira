@@ -12,7 +12,11 @@ public class TorretAmmo : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collided)
+    {
+        Destroy(gameObject);
+    }
+    private void OnTriggerEnter(Collider collided)
     {
         Destroy(gameObject);
     }

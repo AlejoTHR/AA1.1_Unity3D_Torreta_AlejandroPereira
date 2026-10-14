@@ -5,13 +5,21 @@ public class MovingBulleye : MonoBehaviour
 {
     public Transform A;
     public Transform B;
+    [SerializeField] Vector3 Next;
     public float Speed = 1;
+
+    private void Start()
+    {
+        Next = B.position;
+    }
 
     private void Update()
     {
-        if (transform.position == A.position)Vector3.Lerp(transform.position, B.position, Speed);
 
-        Vector3.Lerp(transform.position, A.position, Speed);
+        transform.position = Vector3.MoveTowards(transform.position, Next, Speed*Time.deltaTime);
+
+        if (transform.position == Next) Next = (Next == A.position) ? B.position : A.position;
+
 
 
     }

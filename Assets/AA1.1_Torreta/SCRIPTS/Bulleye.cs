@@ -24,6 +24,8 @@ public class Bulleye : MonoBehaviour
 
     private void Update()
     {
+
+        //UI
         if (!IsActive) {
             SpawnTimer -= Time.deltaTime;
             if (SpawnTimer <= 0)
@@ -35,6 +37,10 @@ public class Bulleye : MonoBehaviour
 
             }
         }
+
+
+        //SOUND
+
 
     }
 

@@ -40,14 +40,14 @@ public class TorretMovement : MonoBehaviour
         MousePos = Mouse.current.delta.ReadValue();
         
         // DIRECCIÓN DEL CAÑÖN
-        _PivotCanon.localEulerAngles -= new Vector3(MousePos.y,0,0);
+        _PivotCanon.Rotate(new Vector3(MousePos.y, 0, 0));
 
         // DIRECCIÓN DEL CUERPO
-        transform.localEulerAngles += new Vector3(0, MousePos.x, 0);
+        transform.Rotate(new Vector3(0, MousePos.x, 0));
 
 
         // DIRECCIÓN DEL CAÑÓN        +      // DIRECCIÓN DEL CUERPO
-        Quaternion BulletRotation = Quaternion.Euler(-_PivotCanon.localEulerAngles.x-90, transform.localEulerAngles.y, 0);
+        Quaternion BulletRotation = Quaternion.Euler(-_PivotCanon.localEulerAngles.x+90, transform.localEulerAngles.y, 0);
 
 
         if (_input.Player.Shoot.WasPressedThisFrame())
